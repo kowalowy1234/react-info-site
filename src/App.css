@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  background-color: #282D35;
+  /* background-color: #282D35; */
 }
 
 .App {
@@ -13,6 +13,16 @@ body {
 }
 
 .navbar {
+  /* background-color: #21222A; */
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-family: Inter, sans-serif;
+  height: 90px;
+  box-shadow: 0 1px 4px #b5b5b5;
+}
+
+.navbar-dark {
   background-color: #21222A;
   display: flex;
   align-items: center;
@@ -41,8 +51,16 @@ body {
 
 .main {
   font-family: Inter, sans-serif;
-  color: #FFFFFF;
-  background-image: url('images/react-icon-large.png');
+  color: #2B283A;
+  background-image: url('images/react-icon-light.png');
+  background-repeat: no-repeat;
+  background-position: right 50%;
+}
+
+.main-dark {
+  font-family: Inter, sans-serif;
+  color: #ffffff;
+  background-image: url('images/react-icon-dark.png');
   background-repeat: no-repeat;
   background-position: right 50%;
 }
@@ -67,4 +85,64 @@ body {
 .main--fact-list > li::marker {
   color:#61DAFB;
   font-size: 1.3rem;
+}
+
+.toggler-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.toggler {
+  width: 50px;
+  height: 26px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #2B283A;
+  display: flex;
+  align-items: center;  
+  justify-content: flex-start;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.toggler-dark {
+  width: 50px;
+  height: 26px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;  
+  justify-content: flex-end;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.toggler-dot {
+  background-color: #ffffff;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+}
+
+.toggler-dot-dark {
+  background-color: #2B283A;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+}
+
+.toggler-text-light-dark {
+  color: #918E9B;
+}
+
+.toggler-text-dark {
+  color: #D5D4D8;
+}
+
+.toggler-dark-dark {
+  color:rgb(255, 255, 255);
 }
